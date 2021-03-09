@@ -5,7 +5,7 @@
   },
   {
     "type": "21.T11148/8eb858ee0b12e8e463a5",
-    "parsed_data": "{\"identifierValue\":\"http://hdl.handle.net/21.T11998/0000-001A-3905-F\",\"identiferType\":\"MeasuringInstrument\"}"
+    "parsed_data": "{\"identifierValue\":\"http://hdl.handle.net/21.T11998/0000-001A-3905-F\",\"identiferType\":\"Handle\"}"
   },
   {
     "type": "21.T11148/9a15a4735d4bda329d80",
@@ -21,7 +21,11 @@
   },
   {
     "type": "21.T11148/1f3e82ddf0697a497432",
-    "parsed_data": "[{\"Manufacturer\":{\"manufacturerName\":\"Sea-Bird Scientific\",\"modelName\":\"SBE 37-IM\",\"manufacturerIdentifier\":{\"manufacturerIdentifierValue\":\"http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/\",\"manufacturerIdentifierType\":\"URL\"}}}]"
+    "parsed_data": "[{\"Manufacturer\":{\"manufacturerName\":\"Sea-Bird Scientific\",\"manufacturerIdentifier\":{\"manufacturerIdentifierValue\":\"http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/\",\"manufacturerIdentifierType\":\"URL\"}}}]"
+  },
+  {
+    "type": "21.T11148/c1a0ec5ad347427f25d6",
+    "parsed_data": "[{\"Model\":{\"modelName\":\"Sea-Bird SBE 37 MicroCat IM-CT with optional pressure (submersible) CTD sensor series\",\"modelIdentifier\":{\"modelIdentifierValue\":\"http://vocab.nerc.ac.uk/collection/L22/current/TOOL0022/\",\"modelIdentifierType\":\"URL\"}}}]"
   },
   {
     "type": "21.T11148/55f8ebc805e65b5b71dd",
@@ -29,7 +33,7 @@
   },
   {
     "type": "21.T11148/f76ad9d0324302fc47dd",
-    "parsed_data": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0022/"
+    "parsed_data": "[\"http://vocab.nerc.ac.uk/collection/L05/current/134/\",\"http://vocab.nerc.ac.uk/collection/L05/current/350/\"]"
   },
   {
     "type": "21.T11148/72928b84e060d491ee41",
@@ -37,7 +41,7 @@
   },
   {
     "type": "21.T11148/22c62082a4d2d9ae2602",
-    "parsed_data": "[{\"date\":{\"date\":\"1999-11-01\",\"dateType\":\"Commissioned\"}}]"
+    "parsed_data": "[{\"Date\":{\"dateValue\":\"1999-11-01\",\"dateType\":\"Commissioned\"}}]"
   },
   {
     "type": "21.T11148/eb3c713572f681e6c4c3",
