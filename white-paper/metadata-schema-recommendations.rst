@@ -21,21 +21,18 @@ exist, covering a broad spectrum of disciplines and their best
 practices.  The PIDINST schema is designed to complement
 multidisciplinary best practices for property values.  Many properties
 allow for soft-typing (e.g., *ownerName*), giving users the ability to
-use values of their choice, such as free text or domain-specific
-terminologies.  Property attributes enable users and machines to
-understand the context of the value (e.g., *ownerIdentifier*,
-*ownerIdentifierType*), again using free text or standardised
-terminologies.  While free text is allowed, institutions should
-consider using common terminologies where practical to enhance the
-(semantic) interoperability of PID records, particularly where they
-form part of domain-specific best practice.  For example, a
+use values of their choice.  Property attributes enable users and
+machines to understand the context of the value (e.g., *ownerIdentifier*,
+*ownerIdentifierType*) using common terminologies.  Common terminologies
+enhance the (semantic) interoperability of PID records, particularly 
+where they form part of domain-specific best practice.  For example, a
 comprehensive set of terminologies that describe *instrumentType* (via
 *instrumentTypeIdentifier*) or *Model* (via *modelIdentifier*) are
-used widely in the Earth science marine domain
-(`http://vocab.nerc.ac.uk/collection/L22/current/ <http://vocab.nerc.ac.uk/collection/L22/current/>`_,
+used widely in the Earth science marine domain 
+(`http://vocab.nerc.ac.uk/collection/L22/current/ <http://vocab.nerc.ac.uk/collection/L22/current/>`_, 
 `http://vocab.nerc.ac.uk/collection/L05/current/ <http://vocab.nerc.ac.uk/collection/L05/current/>`_).
 An example of the use of common terminologies in ePIC records is shown
-in :numref:`tab-schema-handle-record`.
+in numref:`tab-schema-handle-record`.
 
 .. table:: Handle record of instrument identifier
            http://hdl.handle.net/21.T11998/0000-001A-3905-F displaying
@@ -44,8 +41,7 @@ in :numref:`tab-schema-handle-record`.
            by ePIC.  The terminologies used are published on the `NERC
            Vocabulary Server (NVS) <NVS_>`_.  The data for each
            metadata property is provided in JSON.  The Handle record
-           can be viewed at
-           http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
+           can be viewed at http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
     :name: tab-schema-handle-record
     :class: longtable
 
@@ -326,8 +322,7 @@ may be assumed that the metadata record will be updated at a later
 point in time including a name.  The owner of the instrument is
 refused to be disclosed and the manufacturer is not known.
 
-.. _NVS:
-   https://www.bodc.ac.uk/resources/products/web_services/vocab/
+.. _NVS: https://vocab.nerc.ac.uk/
 
 .. _ROR: https://ror.org/
 
