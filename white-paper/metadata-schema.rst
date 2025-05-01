@@ -15,9 +15,9 @@ instrument PIDs at PID providers to help meet these criteria.  Version
 Currently, two variants of the metadata schema exist.  The original
 `PIDINST schema`_, based on the evaluation of use cases collected by
 the working group, is used for prototypical implementation of metadata
-properties in the ePIC infrastructure.  A second variant provides a
+properties in the ePIC and B2INST infrastructures.  A second variant provides a
 `mapping between PIDINST metadata properties and DataCite Metadata
-Schema 4.3 <PIDINST DataCite schema_>`_.  In the following, we
+Schema <PIDINST DataCite schema_>`_.  In the following, we
 describe the properties in the original PIDINST schema and discuss
 their semantics:
 
