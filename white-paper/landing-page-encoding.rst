@@ -355,6 +355,138 @@ profile to improve the semantic interoperability of SensorML in the
 Earth Science marine domain by developing sets of sensor specific
 terminologies.
 
+Schema.org
+~~~~~~~~~~
+
+The `NERC Environmental Data Service (EDS) <EDS_>`_ has been exploring
+the use of `schema.org`_ to model instrument PIDs for sensors as part 
+of a national research cloud pilot funded by UKRI and DSIT. As shown in 
+:numref:`tab-schema-handle-record`, NERC has conceptualized instruments 
+using the Schema.org vocabulary, as illustrated in 
+:numref:`snip-landing-encoding-schema-org`. In this approach, instruments 
+are represented as `IndividualProduct`_ and `CreativeWork`_ types. While 
+most properties from the PIDINST metadata schema mapped relatively logically 
+to corresponding Schema.org properties, the representation of 
+*MeasuredVariable* required the addition of `observes` from the `Semantic 
+Sensor Network Ontology (SOSA) <SOSA_>`_ by modeling an instrument as a 
+type of `sosa:Sensor`. Additionally, the representation 
+of *RelatedIdentifier* may vary depending on the *relationType*. It is 
+recommended to follow the guidance from Stathis et al. (2022)[#stathis2022], 
+for handling *RelatedIdentifier* and *relationType*, as most values 
+allowed for *relationType* in the PIDINST metadata schema align with 
+DataCite metadata schema values. In this example, persistent identifiers 
+are expanded to include the property name, property provenance and a
+redirection URI following the `ESIP`_ Federation guidance using the schema.org
+`identifier`_ property with a value of `PropertyValue`_ type that includes a
+`url`_ property for redirection.
+
+.. code-block:: JSON
+    :name: snip-landing-encoding-schema-org
+    :caption: representation of the example of
+              :numref:`tab-schema-handle-record` in Schema.org using JSON-LD.
+
+        {
+            "@context": {
+                "@vocab": "https://schema.org/",
+                "@sosa": "http://www.w3.org/ns/sosa/"
+            },
+            "@graph": [
+                {
+                    "@type": [
+                        "IndividualProduct",
+                        "CreativeWork",
+                        "sosa:Sensor"
+                    ],
+                    "@id": "http://hdl.handle.net/21.T11998/0000-001A-3905-F",
+                    "name": "SBE 37 MCAT-IM-CT(P) 2490",
+                    "schemaVersion": "1.0",
+                    "serialNumber": "2490",
+                    "identifier": {
+                        "@type": "PropertyValue",
+                        "propertyID": "https://hdl.handle.net/",
+                        "value": "21.T11998/0000-001A-3905-F",
+                        "url": "http://hdl.handle.net/21.T11998/0000-001A-3905-F"
+                    },
+                    "additionalProperty": {
+                        "@type": "PropertyValue",
+                        "name": "InventoryNumber",
+                        "value": "xxx-1234-xxx"
+                    },
+                    "description": "A high accuracy conductivity and temperature recorder with an optional pressure sensor designed for deployment on moorings. The IM model has an inductive modem for real-time data transmission plus internal flash memory data storage.",
+                    "manufacturer": [
+                        {
+                            "@id": "https://ror.org/02try9452",
+                            "@type": "Organization",
+                            "name": "Sea-Bird Scientific",
+                            "identifier": {
+                                "@type": "PropertyValue",
+                                "propertyID": "https://registry.identifiers.org/registry/ror",
+                                "value": "ror:02try9452",
+                                "url": "https://ror.org/02try9452"
+                            },
+                            "sameAs": "http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/"
+                        }
+                    ],
+                    "model": {
+                        "@id": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0022/",
+                        "@type": "ProductModel",
+                        "name": "Sea-Bird SBE 37 MicroCat IM-CT with optional pressure (submersible) CTD sensor series"
+                    },
+                    "category": [
+                        {
+                            "@id": "http://vocab.nerc.ac.uk/collection/L05/current/134/",
+                            "@type": "CategoryCode",
+                            "name": "water temperature sensor"
+                        },
+                        {
+                            "@id": "http://vocab.nerc.ac.uk/collection/L05/current/350/",
+                            "@type": "CategoryCode",
+                            "name": "salinity sensor"
+                        }
+                    ],
+                    "purchaseDate": "1999-11-01",
+                    "subjectOf": {
+                        "@id": "https://www.bodc.ac.uk/data/documents/nodb/pdf/37imbrochurejul08.pdf",
+                        "@type": "CreativeWork"
+                    },
+                    "sosa:observes": [
+                        {
+                            "@id": "http://vocab.nerc.ac.uk/collection/P01/current/CNDCPR01/",
+                            "@type": [
+                                "PropertyValue",
+                                "sosa:ObservableProperty"
+                            ],
+                            "name": "Electrical conductivity of the water body by in-situ conductivity cell"
+                        },
+                        {
+                            "@id": "http://vocab.nerc.ac.uk/collection/P01/current/PSALPR01/",
+                            "@type": [
+                                "PropertyValue",
+                                "sosa:ObservableProperty"
+                            ],
+                            "name": "Practical salinity of the water body by conductivity cell and computation using UNESCO 1983 algorithm"
+                        },
+                        {
+                            "@id": "http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/",
+                            "@type": [
+                                "PropertyValue",
+                                "sosa:ObservableProperty"
+                            ],
+                            "name": "Temperature of the water body"
+                        },
+                        {
+                            "@id": "http://vocab.nerc.ac.uk/collection/P01/current/PREXMCAT/",
+                            "@type": [
+                                "PropertyValue",
+                                "sosa:ObservableProperty"
+                            ],
+                            "name": "Pressure (measured variable) exerted by the water body by semi-fixed moored SBE MicroCAT"
+                        }
+                    ]
+                }
+            ]
+        }
+
 Content negotiation
 -------------------
 
@@ -375,3 +507,33 @@ models.\ [#w3_dxwg]_
 
 .. [#w3_dxwg]
    https://www.w3.org/TR/dx-prof-conneg/#dfn-data-profile
+
+.. _EDS:
+    https://eds.ukri.org/
+
+.. _IndividualProduct:
+    https://schema.org/IndividualProduct
+
+.. _CreativeWork:
+    https://schema.org/CreativeWork
+
+.. _identifier:
+    https://schema.org/identifier
+
+.. _PropertyValue:
+    https://schema.org/PropertyValue
+
+.. _url:
+    https://schema.org/url
+
+.. _SOSA:
+   https://www.w3.org/TR/vocab-ssn/
+
+.. [#stathis2022]
+   Stathis, K., Ross, C., Dreyer, B., & Vierkant, P. (2022). DataCite Metadata Schema 4.4 to Schema.org Mapping (1.0). Zenodo. DOI: https://doi.org/10.5281/zenodo.7661399
+
+.. _ESIP:
+   https://github.com/ESIPFed/science-on-schema.org/blob/main/guides/Dataset.md#identifier
+
+.. _schema.org:
+   https://schema.org/
