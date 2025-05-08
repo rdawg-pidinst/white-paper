@@ -24,12 +24,12 @@ allow for soft-typing (e.g., *ownerName*), giving users the ability to
 use values of their choice.  Property attributes enable users and
 machines to understand the context of the value (e.g., *ownerIdentifier*,
 *ownerIdentifierType*) using common terminologies.  Common terminologies
-enhance the (semantic) interoperability of PID records, particularly 
+enhance the (semantic) interoperability of PID records, particularly
 where they form part of domain-specific best practice.  For example, a
 comprehensive set of terminologies that describe *instrumentType* (via
 *instrumentTypeIdentifier*) or *Model* (via *modelIdentifier*) are
-used widely in the Earth science marine domain 
-(`http://vocab.nerc.ac.uk/collection/L22/current/ <http://vocab.nerc.ac.uk/collection/L22/current/>`_, 
+used widely in the Earth science marine domain
+(`http://vocab.nerc.ac.uk/collection/L22/current/ <http://vocab.nerc.ac.uk/collection/L22/current/>`_,
 `http://vocab.nerc.ac.uk/collection/L05/current/ <http://vocab.nerc.ac.uk/collection/L05/current/>`_).
 An example of the use of common terminologies in ePIC records is shown
 in numref:`tab-schema-handle-record`.
