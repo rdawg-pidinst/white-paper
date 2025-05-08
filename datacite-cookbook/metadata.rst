@@ -209,70 +209,70 @@ considered as well, if it makes sense for a particular use case.
 
 .. _ROR: https://ror.org/
 
-.. _DataCite Metadata Schema: https://datacite-metadata-schema.readthedocs.io/en/4.5/introduction/
+.. _DataCite Metadata Schema: https://datacite-metadata-schema.readthedocs.io/
 
 .. _DataCite property Identifier:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/identifier/
+   https://datacite-metadata-schema.readthedocs.io/en/latest/properties/identifier/
 
 .. _DataCite property Creator:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/creator/
+   https://datacite-metadata-schema.readthedocs.io/en/latest/properties/creator/
 
 .. _DataCite property Title:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/title/
+   https://datacite-metadata-schema.readthedocs.io/en/latest/properties/title/
 
 .. _DataCite property Publisher:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/publisher/
+   https://datacite-metadata-schema.readthedocs.io/en/latest/properties/publisher/
 
 .. _DataCite property Contributor:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/contributor/
+   https://datacite-metadata-schema.readthedocs.io/en/latest/properties/contributor/
 
 .. _DataCite property Date:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/date/
+   https://datacite-metadata-schema.readthedocs.io/en/latest/properties/date/
 
 .. _DataCite property ResourceType:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/resourcetype/
+   https://datacite-metadata-schema.readthedocs.io/en/latest/properties/resourcetype/
 
 .. _DataCite property AlternateIdentifier:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/alternateidentifier/
+   https://datacite-metadata-schema.readthedocs.io/en/latest/properties/alternateidentifier/
 
 .. _DataCite property FundingReference:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/fundingreference/
+   https://datacite-metadata-schema.readthedocs.io/en/latest/properties/fundingreference/
 
 .. _DataCite definition resourceTypeGeneral:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/
+   https://datacite-metadata-schema.readthedocs.io/en/latest/appendices/appendix-1/resourceTypeGeneral/
 
 .. _DataCite definition relationType:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/
+   https://datacite-metadata-schema.readthedocs.io/en/latest/appendices/appendix-1/relationType/
 
 .. _DataCite definition IsDescribedBy:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isdescribedby
+   https://datacite-metadata-schema.readthedocs.io/en/latest/appendices/appendix-1/relationType/#isdescribedby
 
 .. _DataCite definition HasMetadata:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#hasmetadata
+   https://datacite-metadata-schema.readthedocs.io/en/latest/appendices/appendix-1/relationType/#hasmetadata
 
 .. _DataCite definition HasVersion:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#hasversion
+   https://datacite-metadata-schema.readthedocs.io/en/latest/appendices/appendix-1/relationType/#hasversion
 
 .. _DataCite definition IsVersionOf:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isversionof
+   https://datacite-metadata-schema.readthedocs.io/en/latest/appendices/appendix-1/relationType/#isversionof
 
 .. _DataCite definition IsNewVersionOf:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#isnewversionof
+   https://datacite-metadata-schema.readthedocs.io/en/latest/appendices/appendix-1/relationType/#isnewversionof
 
 .. _DataCite definition IsPreviousVersionOf:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#ispreviousversionof
+   https://datacite-metadata-schema.readthedocs.io/en/latest/appendices/appendix-1/relationType/#ispreviousversionof
 
 .. _DataCite definition IsPartOf:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#ispartof
+   https://datacite-metadata-schema.readthedocs.io/en/latest/appendices/appendix-1/relationType/#ispartof
 
 .. _DataCite definition HasPart:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#haspart
+   https://datacite-metadata-schema.readthedocs.io/en/latest/appendices/appendix-1/relationType/#haspart
 
 .. _DataCite definition IsCollectedBy:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#iscollectedby
+   https://datacite-metadata-schema.readthedocs.io/en/latest/appendices/appendix-1/relationType/#iscollectedby
 
 .. _DataCite definition Collects:
-   https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/relationType/#collects
+   https://datacite-metadata-schema.readthedocs.io/en/latest/appendices/appendix-1/relationType/#collects
 
 .. _DataCite PIDINST Mapping:
    https://datacite-metadata-schema.readthedocs.io/en/latest/mappings/pidinst/
