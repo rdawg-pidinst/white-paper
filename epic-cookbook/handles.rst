@@ -7,11 +7,11 @@ schema used in ePIC PID handle records can be viewed as follows.  Use
 representations.  Each property, sub-property and attribute is
 resolvable through a unique handle record:
 
-+----------------------+---------------------------------------------------------------------------+
-|Human-readable        |http://dtr-test.pidconsortium.eu/#objects/21.T11148/17ce618137e697852ea6   |
-+----------------------+---------------------------------------------------------------------------+
-|JSON representation   |http://dtr-test.pidconsortium.eu/objects/21.T11148/17ce618137e697852ea6    |
-+----------------------+---------------------------------------------------------------------------+
++----------------------+-----------------------------------------------------------------------------+
+|Human-readable        |https://dtr-test.pidconsortium.net/#objects/21.T11148/17ce618137e697852ea6   |
++----------------------+-----------------------------------------------------------------------------+
+|JSON representation   |https://dtr-test.pidconsortium.net/objects/21.T11148/17ce618137e697852ea6    |
++----------------------+-----------------------------------------------------------------------------+
 
 
 Generating a new instrument PID
@@ -41,33 +41,33 @@ PIDs are typically created using POST/PUT methods.  Using the POST
 method will automatically generate a Universally Unique Identifier
 (UUID) within the suffix of a handle record.  Alternatively a suffix
 can be manually created via PUT method using a local identifier (see
-https://doc.pidconsortium.eu/guides/api-create/).
+https://doc.pidconsortium.net/docs/create).
 
 All examples below use cURL requests at the command line (in Linux).
 Requests can also use PHP, Perl and Python (see
-https://doc.pidconsortium.eu/guides/api-create/).  Examples also use
-the test API endpoint http://vm04.pid.gwdg.de:8081/handles/.  Each
+hhttps://doc.pidconsortium.net/docs/create).  Examples also use
+the test API endpoint https://pid.gwdg.de/handles/.  Each
 ePIC member may use their own API end-point.
 
 To generate a PID handle record automatically generating a UUID for
 the suffix::
 
-        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X POST --data '[{"type":"URL","parsed_data":"https://linkedsystems.uk/system/instance/TOOL0022_2490/current/"}]' http://vm04.pid.gwdg.de:8081/handles/21.T11998/
+        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X POST --data '[{"type":"URL","parsed_data":"https://linkedsystems.uk/system/instance/TOOL0022_2490/current/"}]' https://pid.gwdg.de/handles/21.T11998/
 
-``Result:`` https://vm04.pid.gwdg.de:8081/handles/21.T11998/0000-001A-64A4-A
+``Result:`` https://pid.gwdg.de/handles/21.T11998/0000-001A-64A4-A
 
 To generate a PID handle record automatically generating a UUID within
 the suffix::
 
-        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X POST --data '[{"type":"URL","parsed_data":"https://linkedsystems.uk/system/instance/TOOL0022_2490/current/"}]' http://vm04.pid.gwdg.de:8081/handles/21.T11998/\?prefix=BODC\&suffix=TEST
+        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X POST --data '[{"type":"URL","parsed_data":"https://linkedsystems.uk/system/instance/TOOL0022_2490/current/"}]' https://pid.gwdg.de/handles/21.T11998/\?prefix=BODC\&suffix=TEST
 
-``Result:`` https://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
+``Result:`` https://pid.gwdg.de/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
 
 To manually generate a suffix using PUT method::
 
-        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X PUT --data '[{"type":"URL","parsed_data":"https://linkedsystems.uk/system/instance/TOOL0022_2490/current/"}]' http://vm04.pid.gwdg.de:8081/handles/21.T11998/564987-8865544-9998
+        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X PUT --data '[{"type":"URL","parsed_data":"https://linkedsystems.uk/system/instance/TOOL0022_2490/current/"}]' https://pid.gwdg.de/handles/21.T11998/564987-8865544-9998
 
-``Result:`` https://vm04.pid.gwdg.de:8081/handles/21.T11998/564987-8865544-9998
+``Result:`` https://pid.gwdg.de/handles/21.T11998/564987-8865544-9998
 
 
 Viewing PID handle records
@@ -96,14 +96,14 @@ JSON file (see :download:`JSON example </examples/ePIC_json_example.json>`).
 
 Directly specifying properties within the cURL request::
 
-        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X PUT --data '[{"type": "21.T11148/8eb858ee0b12e8e463a5","parsed_data": "{\"identifierValue\":\"http://hdl.handle.net/21.T11998/BODC-0000-001A-64A3-B-TEST\",\"identiferType\":\"MeasuringInstrument\"}"},{"type": "21.T11148/4eaec4bc0f1df68ab2a7","parsed_data": "[{\"Owner\": {\"ownerName\":\"National Oceanography Centre\",\"ownerContact\":\"louise.darroch@bodc.ac.uk\",\"ownerIdentifier\":{\"ownerIdentifierValue\":\"http://vocab.nerc.ac.uk/collection/B75/current/ORG00009/\",\"ownerIdentifierType\":\"URL\"}}}]"}]' http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
+        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X PUT --data '[{"type": "21.T11148/8eb858ee0b12e8e463a5","parsed_data": "{\"identifierValue\":\"http://hdl.handle.net/21.T11998/BODC-0000-001A-64A3-B-TEST\",\"identiferType\":\"MeasuringInstrument\"}"},{"type": "21.T11148/4eaec4bc0f1df68ab2a7","parsed_data": "[{\"Owner\": {\"ownerName\":\"National Oceanography Centre\",\"ownerContact\":\"louise.darroch@bodc.ac.uk\",\"ownerIdentifier\":{\"ownerIdentifierValue\":\"http://vocab.nerc.ac.uk/collection/B75/current/ORG00009/\",\"ownerIdentifierType\":\"URL\"}}}]"}]' https://pid.gwdg.de/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
 
 *Note: Double quotes must be escaped with a backslash (\\) within the
 JSON parsed_data string*
 
 Specifying properties with a JSON file::
 
-        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X PUT --data @/users/.../ePIC_json_example.json http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
+        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X PUT --data @/users/.../ePIC_json_example.json https://pid.gwdg.de/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
 
 
 Managing PIDs
@@ -114,25 +114,25 @@ Using the ePIC API
 
 The following HTTP protocol methods enable users to manage their PID
 handle records using the ePIC API based on username-password.
-Server: ``vm04.pid.gwdg.de``, Port: ``8081``, Resources: ``handles/``
+Service endpoint: ``https://pid.gwdg.de/handles/``
 
 **Get a PID:**
 
 ::
 
-        curl -D- -u "username:password" -X GET -H "Content-Type: application/json" http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
+        curl -D- -u "username:password" -X GET -H "Content-Type: application/json" https://pid.gwdg.de/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
 
 **Delete a PID (not allowed for production Handles):**
 
 ::
 
-        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X DELETE http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
+        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X DELETE https://pid.gwdg.de/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
 
 **Update a PID:**
 
 ::
 
-        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X PUT --data '[{"type":"21.T11148/8eb858ee0b12e8e463a5","parsed_data":"{\"identifierValue\":\"http://hdl.handle.net/21.T11998/BODC-0000-001A-64A3-B-TEST\",\"identiferType\":\"MeasuringInstrument\"}"}]' http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
+        curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X PUT --data '[{"type":"21.T11148/8eb858ee0b12e8e463a5","parsed_data":"{\"identifierValue\":\"http://hdl.handle.net/21.T11998/BODC-0000-001A-64A3-B-TEST\",\"identiferType\":\"MeasuringInstrument\"}"}]' https://pid.gwdg.de/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
 
 
 Using the Handle API
@@ -140,11 +140,11 @@ Using the Handle API
 
 The following HTTP protocol methods enable users to manage their PID
 handle records using the generic Handle API based on Certificates.
-Server: ``vm04.pid.gwdg.de``, Port: ``8081``, Resources: ``handles/``
+Service endpoint: ``https://vm04.pid.gwdg.de:8001/api/handles/``
 
 The process to derive the ``privkey.pem`` and ``certificate_only.pem``
 from a is described for instance at:
-http://eudat-b2safe.github.io/B2HANDLE/creatingclientcertificates.html
+https://eudat-b2handle.github.io/B2HANDLE/creatingclientcertificates.html
 
 The Handle API does not have an internal suffix generator.  The suffix
 needs to be provided by the user.
