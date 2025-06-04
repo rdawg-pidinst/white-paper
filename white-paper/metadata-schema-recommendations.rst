@@ -32,7 +32,7 @@ used widely in the Earth science marine domain
 (`http://vocab.nerc.ac.uk/collection/L22/current/ <http://vocab.nerc.ac.uk/collection/L22/current/>`_,
 `http://vocab.nerc.ac.uk/collection/L05/current/ <http://vocab.nerc.ac.uk/collection/L05/current/>`_).
 An example of the use of common terminologies in ePIC records is shown
-in numref:`tab-schema-handle-record`.
+in :numref:`tab-schema-handle-record`.
 
 .. table:: Handle record of instrument identifier
            http://hdl.handle.net/21.T11998/0000-001A-3905-F displaying
