@@ -1,36 +1,36 @@
 Linking physical objects
 ========================
 
-Instruments and their individual configuration represent the major
-reference for the origin of a broad spectrum of data. As such, both
-become part of the Internet of Things (IoT) and therefore it is of key
-importance for related identification mechanisms to enable physical
-access to these objects in addition to their digital representations or
-catalogue metadata. Thus, to ultimately allow the “mapping the real
-world into the virtual world”.\ [#atzori]_ This kind of access is
-essential to reproduce science as it allows us to compare experimental
-setup and to repeat analyses.
+Accessing digital representations directly from the physical device is
+critically important, as it allows users to quickly identify devices,
+streamline tracking and inventory management, and efficiently
+contextualize data.
 
-The most trivial but failsafe method to link physical objects with their
-virtual representation would be to permanently label an instrument by
-writing or engraving its PID onto it or its container along with its
-inventory number and serial number. Because space for labels is limited
-on smaller sensors, modern QR tags or barcodes may be more convenient as
-they offer the possibility to encode any identifying information in a
-machine readable way. A recommended way would be to use QR codes to
-embed a PID’s actionable URIs (:numref:`fig-objects-qr`). Ideally such
-a QR badge additionally displays the PID as well as the inventory
-number and serial number in a human readable way. Some QR code
-generators now allow users to integrate images like organisation logos
-or track scanning activity such as the GPS position when the label is
-scanned.
+The most trivial method to link physical objects with their digital
+representation would be to permanently label an instrument by writing
+or engraving its PID onto it or its container.  Because space for
+labels is limited on smaller devices, modern QR tags or barcodes may
+be more convenient as they offer the possibility to encode any
+identifying information in a machine-readable way.  The
+`Sensor Management System <SMS_>`_ initiative, developed as part of
+the DataHub Earth, generates a unique QR code for each registered
+instrument PID.  As part of an integrated ecosystem of key services
+supporting the European Ocean Observing System (EOOS), the Horizon
+Europe-funded `AMRIT`_ project is currently developing mobile
+applications to scan these QR codes applied to sensor platforms in the
+field.  We recommend to use QR codes to embed a PID’s actionable URIs
+(:numref:`fig-objects-qr`).  Some QR code generators now allow users
+to integrate images like organisation logos or embed extra information
+(such as serial number or name).  Additionally, some QR code providers
+offer tracking when a label is scanned, helping to monitor device
+locations more effectively.
 
-In case neither labelling of physical objects with barcodes or PID
-strings is possible, linking of instruments with their digital
-representation can be maintained by providing appropriate metadata
-records. For instruments such linking can be achieved by capturing
-identifiers which uniquely identify an instrument such as serial number
-or inventory number.
+If engraving or applying QR codes is not possible, instruments can
+still be linked to their digital representations by including key
+identifying metadata in PID records.  For example, a combination of
+the manufacturer name and serial number - often found on physical
+devices - can serve as a unique identifier.  Other metadata such as an
+owner name or inventory number may also be helpful.
 
 While PIDINST schema metadata does not provide explicit fields for
 serial numbers or inventory numbers, it currently offers a generic way
@@ -38,9 +38,7 @@ to capture any kind of identifier which can be used for this purpose.
 *AlternateIdentifier* can be used to record any identifier string and
 *alternateIdentifierType* to specify an identifier type
 (:numref:`snip-objects-serial`). PIDINST schema recommends the use of
-the terms *serialNumber* and *inventoryNumber.* There is on-going
-discussion regarding the use of explicit fields for these properties
-in PIDINST.
+the terms *serialNumber* and *inventoryNumber.*
 
 .. figure:: /images/image4.png
     :name: fig-objects-qr
@@ -58,16 +56,5 @@ in PIDINST.
          <AlternateIdentifier alternateIdentifierType="serialNumber">7351-349l-mn24-019f</AlternateIdentifier>
       </AlternateIdentifiers>
 
-Besides storing e.g. serial numbers in PIDINST schema metadata, it is
-highly recommended to store the instrument PID within an institutional
-sensor management or inventory system immediately after PID
-registration. This ensures the maintenance of links between physical
-objects and their virtual representation at both endpoints, the
-institutional sensor management system as well as the PID registry, and
-will ensure the persistence of object linking in case of failures on
-either side.
-
-.. [#atzori]
-   Atzori, Luigi & Iera, Antonio & Morabito, Giacomo. (2010). The
-   Internet of Things: A Survey. Computer Networks. 2787-2805.
-   10.1016/j.comnet.2010.05.010.
+.. _SMS: https://zenodo.org/records/15111317
+.. _AMRIT: https://www.amritproject.eu/
