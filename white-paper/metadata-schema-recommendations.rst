@@ -41,7 +41,8 @@ in :numref:`tab-schema-handle-record`.
            by ePIC.  The terminologies used are published on the `NERC
            Vocabulary Server (NVS) <NVS_>`_.  The data for each
            metadata property is provided in JSON.  The Handle record
-           can be viewed at http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
+           can be viewed at
+           http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
     :name: tab-schema-handle-record
     :class: longtable
 
