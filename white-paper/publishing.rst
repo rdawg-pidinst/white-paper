@@ -9,9 +9,10 @@ it is necessary to become a member of the PID provider to publish PIDs
 directly, or work with one of their current members or registration
 repositories to publish PIDs on behalf of the institutional instrument
 provider. Current PID providers known to be suitable with RDA PIDINST
-are `ePIC`_ and `DataCite`_, but PIDINST is not limited to these
+are `ePIC`_, `B2INST`_ and `DataCite`_, but PIDINST is not limited to these
 providers; others may implement the schema, too.
 
 
 .. _ePIC: https://www.pidconsortium.net/
 .. _DataCite: https://datacite.org/
+.. _B2INST: https://b2inst.gwdg.de/
