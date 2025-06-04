@@ -371,7 +371,7 @@ to corresponding Schema.org properties, the representation of
 Sensor Network Ontology (SOSA) <SOSA_>`_ by modeling an instrument as a
 type of `sosa:Sensor`. Additionally, the representation
 of *RelatedIdentifier* may vary depending on the *relationType*. It is
-recommended to follow the guidance from Stathis et al. (2022)[#stathis2022],
+recommended to follow the guidance from Stathis et al. (2022)\ [#stathis2022]_,
 for handling *RelatedIdentifier* and *relationType*, as most values
 allowed for *relationType* in the PIDINST metadata schema align with
 DataCite metadata schema values. In this example, persistent identifiers
