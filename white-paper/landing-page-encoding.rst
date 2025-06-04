@@ -503,38 +503,38 @@ models.\ [#w3_dxwg]_
 .. _Marine SWE Profiles:
    https://github.com/ODIP/MarineProfilesForSWE/blob/master/docs/02_SensorML.md
 
-.. [#ld_converters]
-   as for instance: http://www.easyrdf.org/converter
-
-.. [#w3_dxwg]
-   https://www.w3.org/TR/dx-prof-conneg/#dfn-data-profile
-
 .. _EDS:
-    https://eds.ukri.org/
-
-.. _IndividualProduct:
-    https://schema.org/IndividualProduct
-
-.. _CreativeWork:
-    https://schema.org/CreativeWork
-
-.. _identifier:
-    https://schema.org/identifier
-
-.. _PropertyValue:
-    https://schema.org/PropertyValue
-
-.. _url:
-    https://schema.org/url
+   https://eds.ukri.org/
 
 .. _SOSA:
    https://www.w3.org/TR/vocab-ssn/
-
-.. [#stathis2022]
-   Stathis, K., Ross, C., Dreyer, B., & Vierkant, P. (2022). DataCite Metadata Schema 4.4 to Schema.org Mapping (1.0). Zenodo. DOI: https://doi.org/10.5281/zenodo.7661399
 
 .. _ESIP:
    https://github.com/ESIPFed/science-on-schema.org/blob/main/guides/Dataset.md#identifier
 
 .. _schema.org:
    https://schema.org/
+
+.. _IndividualProduct:
+   https://schema.org/IndividualProduct
+
+.. _CreativeWork:
+   https://schema.org/CreativeWork
+
+.. _identifier:
+   https://schema.org/identifier
+
+.. _PropertyValue:
+   https://schema.org/PropertyValue
+
+.. _url:
+   https://schema.org/url
+
+.. [#ld_converters]
+   as for instance: http://www.easyrdf.org/converter
+
+.. [#stathis2022]
+   Stathis, K., Ross, C., Dreyer, B., & Vierkant, P. (2022). DataCite Metadata Schema 4.4 to Schema.org Mapping (1.0). Zenodo. DOI: https://doi.org/10.5281/zenodo.7661399
+
+.. [#w3_dxwg]
+   https://www.w3.org/TR/dx-prof-conneg/#dfn-data-profile
