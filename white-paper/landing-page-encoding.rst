@@ -360,25 +360,26 @@ Schema.org
 
 The `NERC Environmental Data Service (EDS) <EDS_>`_ has been exploring
 the use of `schema.org`_ to model instrument PIDs for sensors as part
-of a national research cloud pilot funded by UKRI and DSIT. As shown in
-:numref:`tab-schema-handle-record`, NERC has conceptualized instruments
-using the Schema.org vocabulary, as illustrated in
-:numref:`snip-landing-encoding-schema-org`. In this approach, instruments
-are represented as `IndividualProduct`_ and `CreativeWork`_ types. While
-most properties from the PIDINST metadata schema mapped relatively logically
-to corresponding Schema.org properties, the representation of
-*MeasuredVariable* required the addition of `observes` from the `Semantic
-Sensor Network Ontology (SOSA) <SOSA_>`_ by modeling an instrument as a
-type of `sosa:Sensor`. Additionally, the representation
-of *RelatedIdentifier* may vary depending on the *relationType*. It is
-recommended to follow the guidance from Stathis et al. (2022),\ [#stathis2022]_
-for handling *RelatedIdentifier* and *relationType*, as most values
-allowed for *relationType* in the PIDINST metadata schema align with
-DataCite metadata schema values. In this example, persistent identifiers
-are expanded to include the property name, property provenance and a
-redirection URI following the `ESIP`_ Federation guidance using the schema.org
-`identifier`_ property with a value of `PropertyValue`_ type that includes a
-`url`_ property for redirection.
+of a national research cloud pilot funded by UKRI and DSIT.  As shown
+in :numref:`tab-schema-handle-record`, NERC has conceptualized
+instruments using the Schema.org vocabulary, as illustrated in
+:numref:`snip-landing-encoding-schema-org`.  In this approach,
+instruments are represented as `IndividualProduct`_ and `CreativeWork`_
+types.  While most properties from the PIDINST metadata schema mapped
+relatively logically to corresponding Schema.org properties, the
+representation of *MeasuredVariable* required the addition of
+`observes` from the `Semantic Sensor Network Ontology (SOSA) <SOSA_>`_
+by modeling an instrument as a type of `sosa:Sensor`.  Additionally,
+the representation of *RelatedIdentifier* may vary depending on the
+*relationType*.  It is recommended to follow the guidance from Stathis
+et al. (2022),\ [#stathis2022]_ for handling *RelatedIdentifier* and
+*relationType*, as most values allowed for *relationType* in the
+PIDINST metadata schema align with DataCite metadata schema values.  In
+this example, persistent identifiers are expanded to include the
+property name, property provenance and a redirection URI following the
+`ESIP`_ Federation guidance using the schema.org `identifier`_ property
+with a value of `PropertyValue`_ type that includes a `url`_ property
+for redirection.
 
 .. code-block:: JSON
     :name: snip-landing-encoding-schema-org
