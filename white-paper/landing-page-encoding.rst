@@ -355,6 +355,8 @@ profile to improve the semantic interoperability of SensorML in the
 Earth Science marine domain by developing sets of sensor specific
 terminologies.
 
+.. _landing-page-encoding-schema:
+
 Schema.org
 ~~~~~~~~~~
 
@@ -374,7 +376,7 @@ the representation of *RelatedIdentifier* may vary depending on the
 *relationType*.  It is recommended to follow the guidance from Stathis
 et al. (2022),\ [#stathis2022]_ for handling *RelatedIdentifier* and
 *relationType*, as most values allowed for *relationType* in the
-PIDINST metadata schema align with DataCite metadata schema values.  In
+PIDINST metadata schema align with DataCite metadata schema values.In
 this example, persistent identifiers are expanded to include the
 property name, property provenance and a redirection URI following the
 `ESIP`_ Federation guidance using the schema.org `identifier`_ property

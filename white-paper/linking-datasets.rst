@@ -103,6 +103,39 @@ to ensure full compliance with Schema.org functionality.
     Snippet of schema.org representation of event and instrument
     associated with the dataset in :numref:`fig-link-pangea`.
 
+
+The Earth Science Information Partners (ESIP) offer guidance on
+publishing schema.org metadata using JSON-LD for scientific applications.
+They recommend using the *hasPart* property to relate `physical samples`_,
+identified by IGSN persistent identifiers (PIDs), to datasets. Similarly,
+instrument PIDs can be linked to datasets by following the same principle
+as shown in :numref:`snip-link-dataset-esip-schema-org`.
+
+.. code-block:: JSON
+    :name: snip-link-dataset-esip-schema-org
+    :caption: Use of *hasPart* schema.org property to link
+          instruments to datasets following ESIP principles. The instrument
+          is defined as a *CreativeWork*, *IndividualProduct* as described
+          in :ref:`landing-page-encoding-schema`.
+
+          {
+              "@context": "https://schema.org/",
+              "@type": "Dataset",
+              "hasPart": {
+                  "@type": [
+                      "CreativeWork",
+                      "IndividualProduct"
+                  ],
+                  "@id": "http://hdl.handle.net/21.T11998/0000-001A-3905-F",
+                  "identifier": {
+                      "@type": "PropertyValue",
+                      "propertyID": "http://hdl.handle.net/",
+                      "url": "http://hdl.handle.net/21.T11998/0000-001A-3905-F",
+                      "value": "21.T11998/0000-001A-3905-F"
+                  }
+              }
+          }
+
 .. _section-1:
 
 NetCDF4
