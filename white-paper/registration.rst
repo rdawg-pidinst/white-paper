@@ -29,15 +29,15 @@ Local registration at institutional instrument providers
 
 In order to register instrument PIDs at a provider service,
 institutional instrument providers must publish a landing page for each
-instrument PID to resolve to. These publications might be encoded using 
-standard markup languages (e.g. HTML), serialized (e.g. JSON, XML), 
-structured (e.g. JSON-LD, RDF) or specialist standards for describing 
-instruments and their inherited properties and processes (e.g. Open 
-Geospatial Consortium’s (OGC) SensorML, W3C Semantic Sensor Network 
-(SSN/SOSA) ontology). Whichever method of publication is used, it is 
-necessary to ensure there is enough metadata on landing pages to 
-unambiguously identify the instrument (see :ref:`landing-page-content`). 
-The URL address is also used to populate the *LandingPage* property of 
+instrument PID to resolve to. These publications might be encoded using
+standard markup languages (e.g. HTML), serialized (e.g. JSON, XML),
+structured (e.g. JSON-LD, RDF) or specialist standards for describing
+instruments and their inherited properties and processes (e.g. Open
+Geospatial Consortium’s (OGC) SensorML, W3C Semantic Sensor Network
+(SSN/SOSA) ontology). Whichever method of publication is used, it is
+necessary to ensure there is enough metadata on landing pages to
+unambiguously identify the instrument (see :ref:`landing-page-content`).
+The URL address is also used to populate the *LandingPage* property of
 the `PIDINST schema`_, adding this locator to the PID’s metadata record.
 
 
