@@ -1,13 +1,15 @@
 *Louise Darroch* (lorr@noc.ac.uk, https://orcid.org/0000-0003-4163-9575),
-British Oceanographic Data Centre, National Oceanography Centre,
-Liverpool, L3 5DA, United Kingdom
+British Oceanographic Data Centre, Digital Ocean, National Oceanography
+Centre, Joseph Proudman Building, 6 Brownlow Street, Liverpool, L3 5DA,
+United Kingdom
 
 *Robert Huber* (rhuber@uni-bremen.de, https://orcid.org/0000-0003-3000-0020),
 MARUM - Center for Marine Environmental Sciences, University of Bremen,
 Leobener Str. 8, 28359 Bremen, Germany
 
 *Anusuriya Devaraju* (anusuriya.devaraju@csiro.au, https://orcid.org/0000-0003-0870-3192),
-CSIRO Mineral Resources, 26 Dick Perry Avenue, Kensington WA 6151, Australia
+CSIRO Mineral Resources, 26 Dick Perry Avenue, Kensington WA 6151,
+Australia
 
 *Ulrich Schwardmann* (ulrich.schwardmann@gwdg.de, https://orcid.org/0000-0001-6337-8674),
 GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen,
@@ -33,6 +35,16 @@ Burckhardtweg 4, 37077 Göttingen, Germany
 Department of Neuroscience, University of California at San Diego,
 9500 Gilman Drive La Jolla, CA 92093-0662 and SciCrunch Inc, 9500
 Gilman Drive La Jolla, CA 92093-0662
+
+*Alexandra Kokkinaki* (alexk@noc.ac.uk, https://orcid.org/0000-0001-8042-6391),
+British Oceanographic Data Centre, Digital Ocean, National Oceanography
+Centre, Joseph Proudman Building, 6 Brownlow Street, Liverpool, L3 5DA,
+United Kingdom
+
+*Colm Walsh* (colm.walsh@noc.ac.uk, https://orcid.org/0009-0009-0994-1003),
+British Oceanographic Data Centre, Digital Ocean, National Oceanography
+Centre, Joseph Proudman Building, 6 Brownlow Street, Liverpool, L3 5DA,
+United Kingdom
 
 *Ted Habermann* (ted@tedhabermann.com, http://orcid.org/0000-0003-3585-6733),
 Metadata Game Changers, 3980 Broadway, Suite 103-185, Boulder,
@@ -75,7 +87,8 @@ Welfengarten 1 B, 30167 Hannover, Germany and Leibniz University
 Hannover, Welfengarten 1, 30167 Hannover, Germany
 
 *Andreas Czerniak* (andreas.czerniak@uni-bielefeld.de, https://orcid.org/0000-0003-3883-4169),
-Bielefeld University Library, Universitätsstr. 25, 33615 Bielefeld, Germany
+Bielefeld University Library, Universitätsstr. 25, 33615 Bielefeld,
+Germany
 
 *Robert J. Hanisch* (robert.hanisch@nist.gov, https://orcid.org/0000-0002-6853-4602)
 Office of Data and Informatics, Material Measurement Laboratory,
