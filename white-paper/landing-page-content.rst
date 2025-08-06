@@ -8,7 +8,7 @@ It is recommended that instrument providers use enough information
 Ideally, landing pages should include the metadata specified in the
 schema for PID providers and use common terminology or other PIDs where
 practical to aid interoperability
-(see ref:`pidinst-metadata-schema-recommendations`). Institutions should
+(see :ref:`pidinst-metadata-schema-recommendations`). Institutions should
 also consider providing links to the metadata record that accompanies
 PIDs published at PID providers to aid metadata exchange (e.g. DataCite
 XML).
