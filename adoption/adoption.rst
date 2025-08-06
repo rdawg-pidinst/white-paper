@@ -201,22 +201,21 @@ suitable database is identified.  This work is on-going.
 Natural Environmental Data Service (EDS)
 ----------------------------------------
 
-The `NERC Environmental Data Service (EDS) <EDS_>`_ is a trusted UK facility
-providing data stewardship services for environmental data across
-all environmental science domains. The EDS is made up of five data
-centres with domain specific expertise; the British Oceanographic
-Data Centre (BODC), Centre for Environmental Data Analysis (CEDA),
-Environmental Information Data Centre (EIDC), National Geoscience
-Data Centre (NGDS), and UK Polar Data Centre (PDC). The NERC-supported
-EDS brings the data centres together to provide an integrated data
-service across all environmental science domains. As part of the
-Research Data Cloud Pilot project funded by the UK Research and
-Innovation Council (UKRI), the EDS will prototype digital
-infrastructure to cite graphs of all the PIDs used to generate
-formal environmental data collections derived from sensors.
-These graphs (or 'reliquaries' of complex citations) will include
-persistent identifiers for instruments following the PIDINST
-recommendations.
+The `NERC Environmental Data Service (EDS) <EDS_>`_ is a trusted UK
+facility offering comprehensive data stewardship across all environmental
+science domains. It comprises five specialized data centres: the British
+Oceanographic Data Centre (BODC), Centre for Environmental Data Analysis
+(CEDA), Environmental Information Data Centre (EIDC), National Geoscience
+Data Centre (NGDC), and UK Polar Data Centre (PDC). Supported by the
+Natural Environment Research Council (NERC), the EDS unifies these
+centres to provide an integrated data service. As part of the UK
+Research and Innovation (UKRI) and the Department for Science,
+Innovation and Technology (DSIT) Research Data Cloud Pilot project, the
+EDS has developed a pilot service for minting instrument PIDs. The
+`EDS Sensors <EDS-Sensors_>`_ pilot was launched in early 2025 with
+plans to expand this service across multiple and wider domains beyond
+environmental science following pilot phase.
+
 
 .. _SensorML:
    https://www.opengeospatial.org/standards/sensorml
@@ -229,6 +228,9 @@ recommendations.
 
 .. _EDS:
    https://eds.ukri.org/
+
+.. _EDS-Sensors:
+   https://pid-sms.bodc.uk/
 
 .. [#hzb_e2]
    https://doi.org/10.5442/NI000001
