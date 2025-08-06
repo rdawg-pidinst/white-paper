@@ -103,6 +103,39 @@ to ensure full compliance with Schema.org functionality.
     Snippet of schema.org representation of event and instrument
     associated with the dataset in :numref:`fig-link-pangea`.
 
+
+The Earth Science Information Partners (ESIP) offer guidance on
+publishing schema.org metadata using JSON-LD for scientific applications.
+They recommend using the *hasPart* property to relate `physical samples`_,
+identified by IGSN persistent identifiers (PIDs), to datasets. Similarly,
+instrument PIDs can be linked to datasets by following the same principle
+as shown in :numref:`snip-link-dataset-esip-schema-org`.
+
+.. code-block:: JSON
+    :name: snip-link-dataset-esip-schema-org
+    :caption: Use of *hasPart* schema.org property to link
+          instruments to datasets following ESIP principles. The instrument
+          is defined as a *CreativeWork*, *IndividualProduct* as described
+          in :ref:`landing-page-encoding-schema`.
+
+          {
+              "@context": "https://schema.org/",
+              "@type": "Dataset",
+              "hasPart": {
+                  "@type": [
+                      "CreativeWork",
+                      "IndividualProduct"
+                  ],
+                  "@id": "http://hdl.handle.net/21.T11998/0000-001A-3905-F",
+                  "identifier": {
+                      "@type": "PropertyValue",
+                      "propertyID": "http://hdl.handle.net/",
+                      "url": "http://hdl.handle.net/21.T11998/0000-001A-3905-F",
+                      "value": "21.T11998/0000-001A-3905-F"
+                  }
+              }
+          }
+
 .. _section-1:
 
 NetCDF4
@@ -282,6 +315,8 @@ itself is exposed via equipment metadata record and described in the
 .. _product (dataset) example: https://github.com/openaire/guidelines-cris-managers/blob/cb96b925159655adfd97fb11c4a93f3d20c8cbef/samples/openaire_cerif_xml_example_products.xml#L30
 
 .. _equipment example: https://github.com/openaire/guidelines-cris-managers/blob/cb96b925159655adfd97fb11c4a93f3d20c8cbef/samples/openaire_cerif_xml_example_equipments.xml#L18C1-L29C17
+
+.. _physical samples: https://github.com/ESIPFed/science-on-schema.org/blob/main/guides/Experimental.md#LinkingPhysicalSamples
 
 .. [#uk_noc]
    British Oceanographic Data Centre (BODC) and National Marine
